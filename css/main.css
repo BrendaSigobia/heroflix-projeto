@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+}
+
+root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** ELEMENTOS BASE **/
+
+body {
+    background: #141414;
+    font-family: 'Ariel', Times, serif;
+    color: white;
+}
+
+header div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2.logo {
+    margin-left: 5px;
+    color: #E50914;
+    font-family: 'Bebas Neue';
+    font-size: 38px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #efff;
+}
+
+.botao-nav {
+    background-color: #141414;
+    color: #aaa;
+    border: none;
+
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.botao-foto {
+    width: 30px;
+    background-color: #141414;
+    border: none;
+
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botao-nav:hover {
+    color: #efff;
+}
+
+/** COISAS SOBRE O FILME PRINCIPAL **/
+
+.filme-principal {
+    font-size: 16px;
+    background:rgba(0,0,0, .50)100% url(../img/dc/bat3.jpg);
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+p.descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo {
+    color: #a8161dfe;
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: fiorello;
+}
+
+.botao {
+    background-color: rgba(0,0,0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+p.rating {
+    color: rgb(79, 201, 79);
+    font-weight: bold;
+    background-color: #141414a5;
+    display: inline;
+    margin-right: 10px;
+}
+
+p.border-info {
+    display: inline;
+    border: 1px solid #efff;
+    margin-right: 10px;
+}
+
+.box-film {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    transition: transform 450ms;
+}
+
+img.box-film:hover {
+    transition: scale(1.08);
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.titulos-sessoes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.89);
+    height: 10%;
+    margin-top: 9px;
+    margin-left: 25px;
+}
